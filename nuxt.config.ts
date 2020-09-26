@@ -23,7 +23,7 @@ const config: NuxtConfig = {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;500&display=swap',
+          'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Ropa+Sans&display=swap',
       },
     ],
     htmlAttrs: { lang: 'ja' },
@@ -78,20 +78,6 @@ const config: NuxtConfig = {
   generate: {
     fallback: true,
     interval: 2000,
-    async routes() {
-      const { $content } = await import('@nuxt/content')
-      const files = (await $content({ deep: true })
-        .only(['path'])
-        .fetch()) as IContentDocument[]
-
-      const routes = files.map((file) => {
-        return /\/index$/.test(file.path)
-          ? file.path.replace(/\/index$/, '')
-          : file.path
-      })
-
-      return routes
-    },
   },
 }
 
