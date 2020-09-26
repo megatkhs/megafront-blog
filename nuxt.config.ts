@@ -9,15 +9,7 @@ const config: NuxtConfig = {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: '.zezehihi',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: '新卒フロントエンドエンジニアの技術ブログ',
-      },
-    ],
+    meta: [],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
@@ -26,7 +18,6 @@ const config: NuxtConfig = {
           'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Ropa+Sans&display=swap',
       },
     ],
-    htmlAttrs: { lang: 'ja' },
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -64,6 +55,25 @@ const config: NuxtConfig = {
 
   // Content module configuration (https://go.nuxtjs.dev/content-config)
   content: {},
+
+  pwa: {
+    meta: {
+      name: '.zezehihi',
+      author: 'megatkhs',
+      description: '新卒フロントエンドエンジニアの技術ブログ',
+      theme_color: '#1e446a',
+      lang: 'ja',
+      ogHost: 'https://zezehihi.dev',
+    },
+    manifest: {
+      name: '.zezehihi',
+      short_name: '.zezehihi',
+      lang: 'ja',
+      description: '新卒フロントエンドエンジニアの技術ブログ',
+      theme_color: '#1e446a',
+      useWebmanifestExtension: false,
+    },
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
