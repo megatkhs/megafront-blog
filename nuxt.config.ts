@@ -23,7 +23,7 @@ const config: NuxtConfig = {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;500&display=swap',
+          'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Ropa+Sans&display=swap',
       },
     ],
     htmlAttrs: { lang: 'ja' },
