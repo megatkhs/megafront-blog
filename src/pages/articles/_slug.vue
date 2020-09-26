@@ -29,8 +29,3 @@ export default defineComponent({
   },
 })
 </script>
-<style lang="scss">
-p + p {
-  font-size: 1.5em;
-}
-</style>
