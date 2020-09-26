@@ -78,20 +78,6 @@ const config: NuxtConfig = {
   generate: {
     fallback: true,
     interval: 2000,
-    async routes() {
-      const { $content } = await import('@nuxt/content')
-      const files = (await $content({ deep: true })
-        .only(['path'])
-        .fetch()) as IContentDocument[]
-
-      const routes = files.map((file) => {
-        return /\/index$/.test(file.path)
-          ? file.path.replace(/\/index$/, '')
-          : file.path
-      })
-
-      return routes
-    },
   },
 }
 
