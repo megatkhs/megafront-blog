@@ -33,7 +33,7 @@ const config: NuxtConfig = {
   css: ['@/assets/styles/reset.css', '@/assets/styles/common.scss'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['@/plugins/firebase.client'],
+  plugins: [],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
