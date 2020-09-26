@@ -1,0 +1,48 @@
+html {
+  font-size: 10px;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  font-family: font.$famiry-base;
+  color: color.$text-base;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+html, body, #__nuxt, #__layout {
+  height: 100%;
+}
+
+#__layout {
+  display: flex;
+  flex: 1 0 auto;
+  height: 100%;
+}
+
+a {
+  color: color.$link-base;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:visited {
+    color: color.$link-base;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    color: color.$link-hover;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+a {
+  &:hover, &:active {
+    outline: none;
+  }
+}
